@@ -20,7 +20,21 @@ defmodule ElixirGame do
     Supervisor.start_link(children, opts)
   end
 
-  def open_window(msg \\ nil) do
-    GenServer.call(ElixirGame.Base, :open_window)
+  #
+  # Window functions
+  #
+  def open_window( opts \\ [] ) do
+    GenServer.call(ElixirGame.Base, {:open_window, opts} )
   end
+  def close_window( ) do
+    GenServer.call(ElixirGame.Base, {:close_window, nil} )
+  end
+
+  #
+  # Register for input
+  #
+  def poll_input( ) do
+    GenServer.call(ElixirGame.Base, {:poll_input, nil} )
+  end
+
 end
