@@ -1,6 +1,15 @@
 # ElixirGame
 
-**TODO: Add description**
+ElixirGame is a really gross and simple API for making games and other visualizations.
+
+## Supported operations
+
+### Window operations
+* Create a window
+* Destroy a window
+
+### Poll input
+* Get posted events
 
 ## Installation
 
