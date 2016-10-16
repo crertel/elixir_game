@@ -19,3 +19,4 @@ erl_crash.dump
 # remove vim droppings
 *.swp 
 *.sublime-workspace
+/bin
