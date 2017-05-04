@@ -35,6 +35,8 @@ defmodule ElixirGame.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
    # [{:base, path: "../base"}]
-   [{:elixir_make, "~> 0.3.0"}]
+   [
+    {:elixir_make, "~> 0.3.0", runtime: false}
+   ]
   end
 end
