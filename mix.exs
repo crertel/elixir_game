@@ -8,6 +8,11 @@ defmodule ElixirGame.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      compilers: [:elixir_make] ++ Mix.compilers,
+     make_executable: "make",
+     make_makefile: "Makefile",
+     make_targets: ["clean", "build"],
+     make_clean: ["clean"],
+     make_env: %{},
      deps: deps()]
   end
 
